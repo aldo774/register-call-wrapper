@@ -1,8 +1,8 @@
 {
   "name": "register-call-wrapper",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A wrapper to work with the Register Call Web API.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
@@ -18,6 +18,10 @@
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:code-coverage": "nyc npm test"
   },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "nyc": {
     "functions": 70,
     "lines": 70,
@@ -32,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/aldo774/register-call-wrapper.git"
+    "url": "git+https://github.com/aldo774/register-call-wrapper.git"
   },
   "keywords": [
     "js",
@@ -41,7 +45,7 @@
   ],
   "author": "Aldo Soares <soares_aldo@hotmail.com>",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/aldo774/register-call-wrapper#readme",
+  "homepage": "https://github.com/aldo774/register-call-wrapper#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
